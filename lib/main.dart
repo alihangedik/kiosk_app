@@ -3,21 +3,27 @@ import 'package:flutter/services.dart';
 
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:screen/screen.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
-//const TIME_FORMAT_WITH_SECONDS_STRING = 'hh:mm:ss a';
+// ignore: constant_identifier_names
 const TIME_FORMAT_STRING = 'hh:mm';
+// ignore: constant_identifier_names
 const AM_PM_FORMAT_STRING = 'a';
+// ignore: constant_identifier_names
 const DATE_FORMAT_STRING = 'EEEE, MMMM d, yyyy';
 
 final DateFormat timeFormatter =  DateFormat(TIME_FORMAT_STRING);
 final DateFormat ampmFormatter =  DateFormat(AM_PM_FORMAT_STRING);
 final DateFormat dateFormatter =  DateFormat(DATE_FORMAT_STRING);
 
+// ignore: constant_identifier_names
 const DAY_TIME = [9, 21];
+// ignore: constant_identifier_names
 const DAY_BRIGHTNESS = 1.0;
+// ignore: constant_identifier_names
 const NIGHT_BRIGHTNESS = 0.0;
 
 // https://proandroiddev.com/how-to-dynamically-change-the-theme-in-flutter-698bd022d0f0
@@ -79,8 +85,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 enum DisplayState {
+  // ignore: constant_identifier_names
   AUTO,
+  // ignore: constant_identifier_names
   NIGHT_MODE,
+  // ignore: constant_identifier_names
   DAY_MODE
 }
 
